@@ -164,6 +164,7 @@ _This bug has 2 wrong behaviors that can be fixed with the same solution. It's a
 
 **Actual:** The **View more** button is visible even when transactions are filtered by employee. _You can even click **View more** button and get an unexpected result_
 
+**Fixed:** The view button will be visible only if the nextPage wasn't null
 ##### Part 2
 
 **How to reproduce:**
@@ -176,6 +177,7 @@ _This bug has 2 wrong behaviors that can be fixed with the same solution. It's a
 
 **Actual:** When you reach the end of the data, the **View More** button is still showing and you are still able to click the button. If you click it, the page crashes.
 
+**Fixed:** The view button will be visible only if transactionsByEmployee was null
 # Bug 7: Approving a transaction won't persist the new value
 
 _You need to fix some of the previous bugs in order to reproduce_
