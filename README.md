@@ -105,6 +105,7 @@ We don't have a real API for this challenge, so we added some utilities to simul
 
 **Actual:** The page crashes
 
+**Fixed:** if the id equaled ALL id which is "" for now, it will loadAllTransactions;
 # Bug 4: Clicking on View More button not showing correct data
 
 **How to reproduce:**
